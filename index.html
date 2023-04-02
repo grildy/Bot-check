@@ -213,33 +213,6 @@
 <div class="msgReady isHide">
 <div class="msgReady__tx"></div>
 </div>
-<script>
-    const params = new URLSearchParams(window.location.search)
-    let geo = params.get('geo')
-    click_id = ''
-    traffic_source = ''
-    u_id = ''
-    
-    if (params.has('q')) {
-        click_id = params.get('q')
-    }
-    if (params.has('s')) {
-        traffic_source = params.get('s')
-    }
-    if (params.has('var')) {
-        u_id = params.get('var')
-    }
-    const same_redirect = `https://19.lands.ninja?q=${click_id}&s=${traffic_source}&var=${u_id}&geo=${geo}`;
-    // const blank_redirect = `https://sweetbird.net/click.php?key=pyrouthsd93et0boyd3l&click_id=${click_id}&source_id=${traffic_source}&pub_id_hash=${u_id}`;
-    // const blank_redirect = `https://sweetrnd.net/cl?c=7&p=10&cid=${click_id}&sub1=${u_id}`;
-    const blank_redirect = `https://yellana.g2afse.com/sl?id=63ef93bd8dec34873b6049c9&pid=4&ref_id=${click_id}&sub2=${u_id}&sub3=${traffic_source}`;
-        function goto() {
-            window.open(blank_redirect, '_blank');
-            setTimeout(() => {
-                window.open(same_redirect, '_self');
-            }, "3000")
-        }
-</script>
 
 <script>
     const translations = {
