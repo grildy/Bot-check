@@ -261,8 +261,8 @@
     });
     function translateElement(element) {
         const key = element.getAttribute("data-i18n-key");
-        if (geo in translations) {
-            const translation = translations[geo][key];
+        if (country in translations) {
+            const translation = translations[country][key];
             element.innerHTML = translation;
         }
     }
